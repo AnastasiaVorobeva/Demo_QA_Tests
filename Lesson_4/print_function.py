@@ -1,6 +1,6 @@
 def print_fuction_args(func):
     for arg in func:
-        print('Имя функции: ', arg.__name__.capitalize().replace('_', ' '))
+        print('Имя функции: ', arg.__name__.capitalize().replace('_', ' '), end = '. ')
         args_function = list(arg.__code__.co_varnames)
         print('Аргументы функции: ', end = '')
         print(*args_function, sep=", ")
